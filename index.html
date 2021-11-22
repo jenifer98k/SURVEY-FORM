@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pagination</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css"></link>
+</head>
+<body>
+    <div id="container" >
+      <header class=main-header>
+<h1 id="title">SURVEY FORM</h1>
+<p id="description">Personal data</p>
+<form id="survey-form" class="survey-form" method="post">
+   <div class="form-group">
+       <label for="name" id="name-label">First Name</label>
+       <input type="text" name="name" id="first-name" placeholder="Enter your First Name" required>
+   </div>
+   <div class="form-group">
+    <label for="name" id="email-label">last Name</label>
+    <input type="text" name="name" id="last-name"  placeholder="Enter your Last Name"  required>
+</div>
+
+<div class="form-group">
+    <label for="name"  id="number-label">email</label><br>
+    <input type=email name="name" id="email"  placeholder="Enter your email"  required >
+    </div>
+
+<div class="form-group">
+  <label for="address">Address</label><br>  
+   <textarea name="address" id="comments"  placeholder="Enter your Address"  required></textarea>
+    </div>
+
+   
+
+    <div class="form-group">
+        <label for="name">Pincode</label>
+        <input type="number" name="name" id="pincode">
+        </div>
+    <!--gender radio-->  
+     <div class="form-group">
+     <label for="gen">Gender</label> <br> 
+      <input type="radio" name="option" value="Male" id="r1">Male</input>
+<input type="radio" name="option" value="Female" id="r1">Female</input> 
+<input type="radio" name="option" value="Other" id="r1">Other</input> 
+     </div> 
+  <!--food multiple radio option--> 
+ <div id="form-group"  >
+  <label for="food" id="food">Choice of Foods</label>
+  <div class="food_sel-wr">
+    <input type="checkbox" name="option" value="Italian" class="f f0" id="Italian">Italian</input>
+    <input type="checkbox" name="option" value="Chinese"  class="f f1" id="Chinese">Chinese</input> 
+    <input type="checkbox" name="option" value="South Indian"  class="f f2" id="South Indian">South Indian</input> 
+    <input type="checkbox" name="option" value="Punjabi"  class="f f3" id="Punjabi">Punjabi</input> 
+    <input type="checkbox" name="option" value="Other"  class="f f4" id="Other">Other</input> 
+  </div>
+ </div>  
+    <div class="form-group">
+        <label for="state">state</label>
+        <input type="text" name="state" id="state" placeholder="Enter your state"  required> 
+        </div>
+        <div class="form-group">
+            <label for="country">Country</label><br>
+            <input type="text" name="country" id="country" placeholder="Enter your Country"  required>
+            </div>  
+                   
+            <button  id="submit" class="btn btn-primary" type="submit" value="Register">Submit</button>  
+
+</form>
+<br><br>
+<table id="table">
+  <tr id="firstname-data" class="da"><th>First Name</th>  </tr>  
+  <tr id="lastname-data"  class="da"><th>Last Name</th>  </tr> 
+  <tr id="email-data"  class="da"><th>email</th>  </tr> 
+  <tr id="address-data"  class="da"><th>Address</th>  </tr> 
+  <tr id="pincode-data"  class="da"><th>Pincode</th>  </tr> 
+  <tr id="gender-data"  class="da"><th>Gender</th>  </tr>
+  <tr id="choice of food-data"  class="l"><th>Choice of food</th>  </tr>
+  <tr id="state-data"  class="da"><th>State</th>  </tr> 
+  <tr id="country-data"  class="da"><th>Country</th>  </tr>
+</table>
+      </header>  
+    </div>  
+    <script src="script.js"></script>
+    <script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script>
+
+  <!-- <script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script> -->
+</body>
+</html>

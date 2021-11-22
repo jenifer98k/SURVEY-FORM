@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    line-height: 1.6;
+    background-color: blueviolet;
+    color: whitesmoke;
+}
+label{
+    color: white;
+}
+#container{
+    max-width: 750px;
+    margin:5rem auto;
+    padding: .8rem;
+}
+#title{
+    font-size: 2em;
+    text-align: center;
+    line-height: 1.2;
+    padding: .6rem;
+}
+#description{
+    font-size: 1.5em;
+text-align: center;
+padding: .2rem;
+}
+
+::placeholder{
+    color: grey;
+}
+#submit{
+    background-color: hotpink;
+    padding: 5px;
+    border-color:rgb(199, 84, 84);
+  align-items: center;
+
+}
+#survey-form{
+     background-color: indigo;
+ padding:50px 50px;
+     border-radius: 7px;
+}
+#form-group{
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+#form-group label{
+    display: block;
+    margin-bottom: .5rem;
+}
+#first-name,
+#last-name,
+#email,
+#comments,
+#pincode,
+#radio-selector-g,
+#radio-selector-f,
+#state,
+#country,
+#food{
+     width: 100%;
+     padding: 0.6rem;
+     border-radius: 3px;
+     font-size: 1.05rem;
+}
+input{
+    color: indigo;
+}
+#survey-form .form-group:nth-child(5) label{
+   display: inline;
+}
+#form-group textarea{
+    height: 7rem;
+    font-size: 1.1rem;
+}
+#table, tr ,td{
+    border:2px solid darkblue ;
+    max-width: 750px;
+     background-color: indigo;
+     line-height: 2rem;
+}
+#address{
+    color: darkblue;
+}
+.f{
+    color: indigo;
+    padding: 5px;
+    font-size: 1.2rem;
+}
+/* extra space for choice of foods*/
+.da{
+    columns: 3;
+} 
